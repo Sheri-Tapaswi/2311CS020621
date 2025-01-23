@@ -1,0 +1,10 @@
+import pandas as pd
+
+
+df = pd.read_csv('drug_data.csv')  
+print("First few rows of the dataset:")
+print(df.head())
+print("\nSummary statistics:")
+print(df.describe())
+print("\nMissing values:")
+print(df.isnull().sum())
